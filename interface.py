@@ -162,12 +162,12 @@ class App():
     def end(self, result):
         self.redraw()
         if result == 0:
-            text = "Поражение"
+            text = "AI win / Вы проиграли"
         elif result == 2:
-            text = "Победа"
+            text = "Human win / Вы победили"
             self.ai.correction(self.board.move_stack)
         else:
-            text = "Ничья"
+            text = "Draw / Ничья"
         self.update_score(result)
         overlay = pygame.Surface((8 * self.SIZE, 8 * self.SIZE))
         overlay.fill((0, 0, 0))
