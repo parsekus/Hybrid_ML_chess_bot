@@ -1,3 +1,5 @@
 .venv/
 .idea/
 structure.txt
+*.pyc
+__pycache__/
