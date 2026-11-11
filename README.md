@@ -1,2 +1,7 @@
-**English** | [Русский](README.ru.md)\
-Text
+[English](#english) | [Русский](#русский)
+
+## English
+...
+
+## Русский
+...
