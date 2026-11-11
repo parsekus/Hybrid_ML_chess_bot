@@ -172,7 +172,7 @@ class App():
         overlay = pygame.Surface((8 * self.SIZE, 8 * self.SIZE))
         overlay.fill((0, 0, 0))
         self.wind.blit(overlay, (0, self.SIZE // 2))
-        end_font = pygame.font.SysFont('consolas', self.SIZE, bold=True)
+        end_font = pygame.font.SysFont('consolas', self.SIZE // 2, bold=True)
         surface = end_font.render(text, True, (255, 255, 255))
         rect = surface.get_rect(center=(4 * self.SIZE, self.SIZE // 2 + 4 * self.SIZE))
         self.wind.blit(surface, rect)
