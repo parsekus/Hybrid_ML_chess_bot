@@ -1,2 +1,2 @@
-[English](README.md) | **Русский**
+[English](README.md) | **Русский**\
 Текст
