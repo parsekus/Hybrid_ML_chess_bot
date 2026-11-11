@@ -9,14 +9,14 @@ import torch.nn.functional as fu
 # ----------------------------------------
 
 class PolicyNet(nn.Module):
-    def __init__(self, ch=64):
+    def __init__(self):
         super().__init__()
         self.convs = nn.Sequential(
-            nn.Conv2d(12, ch, 3, padding=1), nn.ReLU(), # 12->64 канала. Покрытие свёртки 3x3
-            nn.Conv2d(ch, ch, 3, padding=1), nn.ReLU(), # 64->64. Покрытие свёртки 5x5
-            nn.Conv2d(ch, ch, 3, padding=1), nn.ReLU(), # 64->64. Покрытие свёртки 7x7
+            nn.Conv2d(12, 64, 3, padding=1), nn.ReLU(), # 12->64 канала. Покрытие свёртки 3x3
+            nn.Conv2d(64, 64, 3, padding=1), nn.ReLU(), # 64->64. Покрытие свёртки 5x5
+            nn.Conv2d(64, 64, 3, padding=1), nn.ReLU(), # 64->64. Покрытие свёртки 7x7
         )
-        self.fc = nn.Sequential(nn.Linear(ch * 8 * 8, 512), nn.ReLU(), nn.Linear(512, 4096)) # Преобразование тензора с 4096 весами в вектор 4096 - всего возможных ходов
+        self.fc = nn.Sequential(nn.Linear(64 * 8 * 8, 512), nn.ReLU(), nn.Linear(512, 4096)) # Преобразование тензора с 4096 весами в вектор 4096 - всего возможных ходов
 
     def forward(self, x):
         return self.fc(self.convs(x).flatten(1))
