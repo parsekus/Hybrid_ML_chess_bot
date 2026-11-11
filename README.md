@@ -3,6 +3,13 @@
   <img src="https://raw.githubusercontent.com/parsekus/Hybrid_ML_chess_bot/main/example.gif" width="650"/>
 </div>
 
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12">
+<img src="https://img.shields.io/badge/PyTorch-2.15-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+<img src="https://img.shields.io/badge/python%20chess-1.11.2-4B8BBE?style=for-the-badge&logo=python&logoColor=white" alt="python-chess">
+<img src="https://img.shields.io/badge/pygame-2.6.1-2C9F2C?style=for-the-badge&logo=python&logoColor=white" alt="pygame">
+</p>
+
 ## 🚀Использование
 Клонируйте репозиторий к себе на компьютер, откройте как проект в IDE, установите зависимости из `requirements.txt` в виртуальное окружение. Используйте версию **Python 3.12**. На более новых версиях могут возникнуть проблемы с совместимостью библиотек.  
 
