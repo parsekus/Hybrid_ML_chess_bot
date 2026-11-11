@@ -1,7 +1,11 @@
-[English](#english) | [Русский](#русский)
+<details>
+<summary>Description in english</summary>
+Text **Markdown**.
 
-## English
-...
+</details>
 
-## Русский
-...
+<details>
+<summary>Описание на русском</summary>
+Текст **Markdown**.
+
+</details>
