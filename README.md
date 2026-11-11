@@ -1,9 +1,9 @@
 <div align="center">
-  <h1>♟️ Hybrid ML Chess Bot / Гибридный шахматный ИИ-бот</h1>
+  <h1>♟️ Hybrid ML Chess Bot / Гибридный шахматный ИИ</h1>
   <img src="https://raw.githubusercontent.com/parsekus/Hybrid_ML_chess_bot/main/example.gif" width="650"/>
 </div>
 
-# 🚀Использование
+## 🚀Использование
 Клонируйте репозиторий к себе на компьютер, откройте как проект в IDE, установите зависимости из `requirements.txt` в виртуальное окружение. Используйте версию **Python 3.12**. На более новых версиях могут возникнуть проблемы с совместимостью библиотек.  
 
 ### 🕹️Как играть?
@@ -20,7 +20,7 @@
   
 **НЕ СЛЕДУЕТ** самостоятельно запускать файл `engine.py`, если вы не планируете менять датасет или заново обучать бота.
 
-# 🧩Структура
+## 🧩Структура
 ### 📁Назначение файлов
 ```text
 Hybrid_ML_chess_bot/
@@ -70,7 +70,7 @@ Hybrid_ML_chess_bot/
 <details>
 <summary><h3>ENG | Description</h3></summary>
 
-# 🚀Usage
+## 🚀Usage
 Clone the repository to your computer, open it as a project in your IDE, and install the dependencies from `requirements.txt` into a virtual environment. Use **Python 3.12**. Newer versions may cause library compatibility issues.
 
 ### 🕹️How to play?
@@ -87,7 +87,7 @@ Clone the repository to your computer, open it as a project in your IDE, and ins
 
 **DO NOT** run `engine.py` on your own unless you plan to change the dataset or retrain the bot.
 
-# 🧩Structure
+## 🧩Structure
 ### 📁Purpose of files
 ```text
 Hybrid_ML_chess_bot/
