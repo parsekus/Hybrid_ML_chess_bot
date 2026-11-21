@@ -10,10 +10,10 @@
 <img src="https://img.shields.io/badge/pygame-2.6.1-2C9F2C?style=for-the-badge&logo=python&logoColor=white" alt="pygame">
 </p>
 
-## 🚀Использование
+## Использование
 Клонируйте репозиторий к себе на компьютер, откройте как проект в IDE, установите зависимости из `requirements.txt` в виртуальное окружение. Используйте версию **Python 3.12**. На более новых версиях могут возникнуть проблемы с совместимостью библиотек.  
 
-### 🕹️Как играть?
+### Как играть?
 1. Запустите `interface.py` и сделайте первый ход. Бот загрузится сам и будет отвечать на ваши ходы.
 2. Окончание игры происходит по правилам шахмат ФИДЕ, возможен мат или пат. Если мат поставите вы - бот проанализирует ваши ходы и в следующий раз будет играть лучше.
 3. Начать партию заново можно кнопкой *restart*.
@@ -27,8 +27,8 @@
   
 **НЕ СЛЕДУЕТ** самостоятельно запускать файл `engine.py`, если вы не планируете менять датасет или заново обучать бота.
 
-## 🧩Структура
-### 📁Назначение файлов
+## Структура
+### Назначение файлов
 ```text
 Hybrid_ML_chess_bot/
 ├── IMG/                  # PNG фигур, подгружаются при каждом запуске
@@ -42,7 +42,7 @@ Hybrid_ML_chess_bot/
 ├── score.txt             # Счёт игрок против машины
 └── weights.pt            # Веса модели
 ```
-### 🕸️Архитектура нейросети
+### Архитектура нейросети
 ```text
 ┌────────────┐   ┌────────────┐   ┌────────────┐   ┌────────────┐
 │    Вход    │   │  Conv 3×3  │   │  Conv 3×3  │   │  Conv 3×3  │
@@ -59,7 +59,7 @@ Hybrid_ML_chess_bot/
 │   → 4096   │   │    ReLU    │   │            │   │ 4096 ходов │
 └────────────┘   └────────────┘   └────────────┘   └────────────┘
 ```
-### 🔍Представление данных
+### Представление данных
 
 | Что | Как кодируется |
 |---|---|
@@ -68,7 +68,7 @@ Hybrid_ML_chess_bot/
 | Ход | Число `from * 64 + to` (0…4095), превращение пешки только в ферзя |
 | Легальность | Маска легальных ходов из `python-chess`: в обучении нелегальным ходам ставится −∞ |
 
-### ⚖️Выбор хода
+### Выбор хода
 ```text
 Для каждого легального хода:
 Оценка хода = ln(вероятность хода по мнению сети) + (значимость материала) * (изменение материала после лучшего ответа соперника)
@@ -79,10 +79,10 @@ Hybrid_ML_chess_bot/
 <details>
 <summary><h3>ENG | Description</h3></summary>
 
-## 🚀Usage
+## Usage
 Clone the repository to your computer, open it as a project in your IDE, and install the dependencies from `requirements.txt` into a virtual environment. Use **Python 3.12**. Newer versions may cause library compatibility issues.
 
-### 🕹️How to play?
+### How to play?
 1. Just run `interface.py` and make your first move. The bot will load automatically and respond to your moves.
 2. The game ends according to FIDE chess rules; checkmate or stalemate is possible. If you deliver checkmate, the bot will analyze your moves and play better next time.
 3. You can start a new game with the *restart* button.
@@ -96,8 +96,8 @@ Clone the repository to your computer, open it as a project in your IDE, and ins
 
 **DO NOT** run `engine.py` on your own unless you plan to change the dataset or retrain the bot.
 
-## 🧩Structure
-### 📁Purpose of files
+## Structure
+### Purpose of files
 ```text
 Hybrid_ML_chess_bot/
 ├── IMG/                  # PNG piece images, loaded on every launch
@@ -111,7 +111,7 @@ Hybrid_ML_chess_bot/
 ├── score.txt             # Player vs. machine score
 └── weights.pt            # Model weights
 ```
-### 🕸️Neural network architecture
+### Neural network architecture
 ```text
 ┌────────────┐   ┌────────────┐   ┌────────────┐   ┌────────────┐
 │    Input   │   │  Conv 3×3  │   │  Conv 3×3  │   │  Conv 3×3  │
@@ -128,7 +128,7 @@ Hybrid_ML_chess_bot/
 │   → 4096   │   │    ReLU    │   │            │   │ 4096 moves │
 └────────────┘   └────────────┘   └────────────┘   └────────────┘
 ```
-### 🔍Data representation
+### Data representation
 
 | What | How it is encoded |
 |---|---|
